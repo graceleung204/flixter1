@@ -40,7 +40,6 @@
 		1F73AB662400B3A800340BC6 = {
 			isa = PBXGroup;
 			children = (
-				1F73AB88240248EA00340BC6 /* MoviesViewController.swift */,
 				1F73AB712400B3A800340BC6 /* flixster1 */,
 				1F73AB702400B3A800340BC6 /* Products */,
 			);
@@ -63,6 +62,7 @@
 				1F73AB7B2400B3AA00340BC6 /* Assets.xcassets */,
 				1F73AB7D2400B3AA00340BC6 /* LaunchScreen.storyboard */,
 				1F73AB802400B3AA00340BC6 /* Info.plist */,
+				1F73AB88240248EA00340BC6 /* MoviesViewController.swift */,
 			);
 			path = flixster1;
 			sourceTree = "<group>";
