@@ -65,6 +65,7 @@ class MoviesViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         let posterUrl = URL(string: baseURL + posterPath)
         
+        cell.posterView.af_setImage(withURL: posterUrl!)
         cell.titleLabel.text = title
         cell.synopsisLabel.text = synopsis
         return cell
