@@ -7,23 +7,11 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class MoviesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return movies.count
-    }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        
-        let movie = movies[indexPath.row]
-        let title = movie["title"] as! String
-        
-        cell.textLabel!.text = title
-        
-        return cell
-    }
     
 
     var movies = [[String: Any]]()
@@ -61,6 +49,26 @@ class MoviesViewController: UIViewController, UITableViewDelegate, UITableViewDa
         task.resume()
     }
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return movies.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MoviesCell") as! MoviesCell
+        
+        let movie = movies[indexPath.row]
+        let title = movie["title"] as! String
+        let synopsis = movie["overview"] as! String
+        let baseURL = "https://image.tmdb.org/t/p/w185"
+        
+        let posterPath = movie["poster_path"] as! String
+        
+        let posterUrl = URL(string: baseURL + posterPath)
+        
+        cell.titleLabel.text = title
+        cell.synopsisLabel.text = synopsis
+        return cell
+    }
 
     /*
     // MARK: - Navigation
