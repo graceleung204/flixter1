@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F02EDD32407E10D00732D81 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F02EDD22407E10D00732D81 /* MovieDetailsViewController.swift */; };
 		1F73AB732400B3A800340BC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F73AB722400B3A800340BC6 /* AppDelegate.swift */; };
 		1F73AB752400B3A800340BC6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F73AB742400B3A800340BC6 /* SceneDelegate.swift */; };
 		1F73AB7A2400B3A800340BC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F73AB782400B3A800340BC6 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		18EDD51726DD622D32975B07 /* Pods_flixster1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flixster1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F02EDD22407E10D00732D81 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
 		1F73AB6F2400B3A800340BC6 /* flixster1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flixster1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F73AB722400B3A800340BC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F73AB742400B3A800340BC6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,7 +52,6 @@
 				B8E6BC50FC893C8765AF3470 /* Pods-flixster1.debug.xcconfig */,
 				6476EC4A0F28553A17533AEC /* Pods-flixster1.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -78,6 +79,7 @@
 				1F73AB722400B3A800340BC6 /* AppDelegate.swift */,
 				1F73AB742400B3A800340BC6 /* SceneDelegate.swift */,
 				1F73AB782400B3A800340BC6 /* Main.storyboard */,
+				1F02EDD22407E10D00732D81 /* MovieDetailsViewController.swift */,
 				1F73AB7B2400B3AA00340BC6 /* Assets.xcassets */,
 				1F73AB7D2400B3AA00340BC6 /* LaunchScreen.storyboard */,
 				1F73AB802400B3AA00340BC6 /* Info.plist */,
@@ -210,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F02EDD32407E10D00732D81 /* MovieDetailsViewController.swift in Sources */,
 				1F73AB732400B3A800340BC6 /* AppDelegate.swift in Sources */,
 				1F73AB752400B3A800340BC6 /* SceneDelegate.swift in Sources */,
 				1F73AB8B2402515500340BC6 /* MoviesCell.swift in Sources */,
