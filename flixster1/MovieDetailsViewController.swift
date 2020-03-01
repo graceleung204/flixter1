@@ -26,9 +26,14 @@ class MovieDetailsViewController: UIViewController {
         let posterUrl = URL(string: baseURL + posterPath)
         posterView.af_setImage(withURL: posterUrl!)
         
-        titleLabel.text = movie["title"] as! String
-        synopsisLabel.text = movie["overview"] as! String
+        let backdropPath = movie["backdrop_path"] as! String
+        let backdropUrl = URL(string: "https://image.tmdb.org/t/p/w780" + backdropPath)
+        backdropView.af_setImage(withURL: backdropUrl!)
         
+        titleLabel.text = movie["title"] as! String
+        titleLabel.sizeToFit()
+        synopsisLabel.text = movie["overview"] as! String
+        synopsisLabel.sizeToFit()
         
         // Do any additional setup after loading the view.
     }
